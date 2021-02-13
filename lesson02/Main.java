@@ -53,7 +53,7 @@ public class Main {
 
         System.out.println("Задание 4");
 
-        int[][] array4 = new int[7][7];
+        int array4[][] = new int[7][7];
         for (int h = 0; h < array4.length; h++) {
             for (int r = 0; r < array4[h].length; r++) {
                 if (h == r || r == array4[h].length - 1 - h) {
@@ -119,7 +119,7 @@ public class Main {
         }
         for (int i = 0; i < mas.length || checkBalance == true; i++) {
             sumLeft += mas[i];
-            sumRight -= sumLeft;
+            sumRight = sum - sumLeft;
             if (sumLeft == sumRight) {
                 checkBalance = true;
                 break;
