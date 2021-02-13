@@ -119,7 +119,7 @@ public class Main {
         }
         for (int i = 0; i < mas.length || checkBalance == true; i++) {
             sumLeft += mas[i];
-            sumRight -= sumLeft;
+            sumRight = sum - sumLeft;
             if (sumLeft == sumRight) {
                 checkBalance = true;
                 break;
@@ -154,7 +154,3 @@ public class Main {
         }
     }
 }
-
-
-
-
