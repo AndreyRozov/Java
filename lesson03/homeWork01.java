@@ -15,9 +15,9 @@ public class homeWork01 {
             for (int i = 0; i < 3; i++) {
                 int getNum = getNumber("Введите число от 0 до 9", 0, 9);
                 if (getNum > randNum) {
-                    System.out.println("Больше");
+                    System.out.println("Загаданное число меньше");
                 } else if (getNum < randNum) {
-                    System.out.println("Меньше");
+                    System.out.println("Загаданное число больше");
                 } else {
                     System.out.println("Угадал");
                     break;
